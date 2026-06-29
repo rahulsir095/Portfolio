@@ -47,7 +47,6 @@ const ContactPage = () => {
     try {
       const formData = new FormData(e.target);
       
-      
       await fetch("https://formsubmit.co/ajax/milantak106@gmail.com", {
         method: "POST",
         body: formData,
@@ -106,11 +105,7 @@ const ContactPage = () => {
           Got a question? Send me a message, and I'll get back to you soon.
         </p>
       </div>
-
-      <div
-        className="h-auto py-10 flex items-center justify-center px-[5%] md:px-0"
-        id="Contact"
-      >
+      <div className="md:px-[10%] px-[5%] w-full py-12 bg-[#030014] overflow-hidden" id="Contact">
         <div className="container px-[1%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[45%_55%] 2xl:grid-cols-[35%_65%] gap-12">
           <div
             data-aos="fade-right"
